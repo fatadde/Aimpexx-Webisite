@@ -1,4 +1,9 @@
+
+import { useRouter } from 'next/navigation';
+
+
 export default function About() {
+     const router = useRouter();
     return (
         <main>
             <main>
@@ -41,7 +46,7 @@ export default function About() {
                     </li>
                 </ul>
             </nav>
-            <button id="track">Track Shipment</button>
+            <button id="track"  onClick={() => router.push('/track')}>Track Shipment</button>
         </header>
 
 

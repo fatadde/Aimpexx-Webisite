@@ -50,10 +50,6 @@ export default function About() {
         </header>
 
 
-
-
-
-
             <section className="aboutus">
                     <h2>About Us</h2>
                     <div className="herosection">

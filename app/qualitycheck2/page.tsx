@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Quality2() {
     return (
         <main>
@@ -11,7 +13,7 @@ export default function Quality2() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>
@@ -40,7 +42,9 @@ export default function Quality2() {
                     </li>
                 </ul>
             </nav>
+            <Link href="/track">
             <button id="track">Track Shipment</button>
+            </Link>
         </header>
 
 
@@ -63,18 +67,20 @@ export default function Quality2() {
                                 </div> 
             
                                 <div className="form-group">
-                                    <input type="text" placeholder="Input Supplier’s Name" name="description" /><br />
+                                    <input type="text" placeholder="Input Supplier’s Name" name="description" />
                                 </div>                     
                         
                                 <div className="form-group">
-                                    <input type="text" placeholder="Input supplier link or contact info" name="description" /><br />
+                                    <input type="text" placeholder="Input supplier link or contact info" name="description" />
                                 </div> 
             
                                 <div className="form-group">
-                                    <input type="text" placeholder="Any Specific Concern about the Supplier? " name="description" /><br />
+                                    <input type="text" placeholder="Any Specific Concern about the Supplier? " name="description" />
                                 </div> 
                             </div>    
-                            <button type="submit" href="/quality3">Continue</button>
+                            <Link href="/quality3">
+                                <button type="submit">Continue</button>
+                            </Link>
                         </form>
                     </section>   
             

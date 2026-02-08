@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Source() {
     return (
         <main>
@@ -11,7 +13,7 @@ export default function Source() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>
@@ -20,7 +22,7 @@ export default function Source() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Services▾</a>
                         <div className="dropdown-content">
-                            <a href="/sourcing">Sourcing</a>
+                            <a href="/source">Sourcing</a>
                             <a href="/payment">Payment to suppliers</a>
                             <a href="/quality">Quality Check(Inspection)</a>
                             <a href="/manufacture">Manufacturing</a>
@@ -40,7 +42,9 @@ export default function Source() {
                     </li>
                 </ul>
             </nav>
+            <Link href="/track">
             <button id="track">Track Shipment</button>
+            </Link>
         </header>
 
 
@@ -60,18 +64,20 @@ export default function Source() {
                         <form method="POST" action="/sourcing">
                             <div className="column">
                                 <div className="form-group">
-                                    <input type="name" placeholder="Input your Full Name" name="fullName" /><br />
+                                    <input type="name" placeholder="Input your Full Name" name="fullName" />
                                 </div>
             
                                 <div className="form-group">
-                                    <input type="tel" placeholder="Phone Number (Whatsapp)" name="contact" /><br />
+                                    <input type="tel" placeholder="Phone Number (Whatsapp)" name="contact" />
                                 </div>    
                                     
                                 <div className="form-group">
-                                    <input type="name" placeholder="Email" name="email" /><br />
+                                    <input type="name" placeholder="Email" name="email" />
                                 </div>
-                            </div>    
+                            </div>  
+                            <Link href="/">  
                             <button type="submit">Submit</button>
+                            </Link>
                         </form>   
                     </section>     
             

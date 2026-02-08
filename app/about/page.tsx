@@ -1,9 +1,53 @@
-
-
+import Link from "next/link"
 
 export default function About() {
     return (
         <main>
+            <header className="header">
+            <div className="logo">
+                <img src="/images/logo.png" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li className="dropdown">
+                        <a href="javascript:void(0)" className="dropbtn">Company▾</a>
+                        <div className="dropdown-content">
+                            <a href="/about">About Us</a>
+                            <a href="/about">Why Choose Us</a>
+                            <a href="/terms">Terms & Conditions</a>
+                        </div>
+                    </li>
+
+                    <li className="dropdown">
+                        <a href="javascript:void(0)" className="dropbtn">Services▾</a>
+                        <div className="dropdown-content">
+                            <a href="/source">Sourcing</a>
+                            <a href="/payment">Payment to suppliers</a>
+                            <a href="/qualitycheck">Quality Check(Inspection)</a>
+                            <a href="/manufacture">Manufacturing</a>
+                            <a href="/shipping">Shipping</a>
+                            <a href="/privacy">Privacy Policy</a>
+                        </div>
+                    </li>
+
+                    <li className="dropdown">
+                        <a href="javascript:void(0)" className="dropbtn">Contact▾</a>
+                        <div className="dropdown-content">
+                            <a href="#">21 Kodesho Street, Computer Village,Lagos State</a>
+                            <a href="#">+234 808 333 9380</a>
+                            <a href="#">aimpexx</a>
+                            <a href="#">aimpexxworldwide@gmail.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <Link href="/track">
+            <button id="track">Track Shipment</button>
+            </Link>
+        </header>
+
+
             <section className="aboutus">
                     <h2>About Us</h2>
                     <div className="herosection">
@@ -22,29 +66,29 @@ export default function About() {
                 <section className="valuessection">
                     <h2>Core Values</h2>
                         <div className="values">
-                            <div className="value">
+                            <div className="value val1">
                                 <h3>Trust</h3>
                                 <p>We prioritize transparency,<br /> honesty, and integrity in all<br /> our dealings, ensuring that<br /> our customers can<br /> confidently rely on us for<br /> secure and seamless<br /> logistics solutions.</p>
                             </div>
 
-                            <div className="value">
+                            <div className="value val2">
                                 <h3>Efficiency</h3>
                                 <p>From sourcing to delivery,<br /> we optimize every step of<br /> the process to save time,<br /> reduce costs, and<br /> eliminate unnecessary<br /> delays, ensuring a smooth<br /> logistics experience.</p>
                             </div>
 
-                            <div className="value">
+                            <div className="value val1">
                                 <h3>Innovation</h3>
                                 <p>We continuously evolve,<br /> adopting cutting-edge<br /> technology and modern<br /> logistics strategies to<br /> enhance service delivery<br /> and stay ahead in the<br /> global supply chain<br /> industry.</p>
                             </div>
 
-                            <div className="value">
+                            <div className="value val2">
                                 <h3>Customer-<br />Centricity</h3>
                                 <p>Our customers are at the<br /> heart of our operations.<br /> We tailor our services to<br /> meet unique needs,<br /> providing personalized<br /> solutions, real-time<br /> updates, and top-notch<br /> customer support.</p>
                             </div>
 
-                            <div className="value">
+                            <div className="value val1">
                                 <h3>Swift Delivery</h3>
-                                <p>Time is critical in logistics.<br /> We are committed to fast<br /> and reliable deliveries,<br /> ensuring that goods arrive<br /> safely and on schedule,<br /> meeting the demands of<br /> modern businesses and<br /> individuals.</p>
+                                <p className="p">Time is critical in logistics.<br /> We are committed to fast<br /> and reliable deliveries,<br /> ensuring that goods arrive<br /> safely and on schedule,<br /> meeting the demands of<br /> modern businesses and<br /> individuals.</p>
                             </div>
                         </div>
                 </section>
@@ -54,8 +98,8 @@ export default function About() {
                     <div className="chooseuscontent">
                         <div className="chooseusitem">
                             <img src="/images/chooseus1.png" alt="choose us image"/>
-                            <h3>Expertise</h3>
-                            <p>With years of experience in international<br /> trade, we solve logistics challenges<br /> quickly and efficiently</p>
+                            <h3 className="h3">Expertise</h3>
+                            <p className="p">With years of experience in international<br /> trade, we solve logistics challenges<br /> quickly and efficiently</p>
                         </div>
 
                         <div className="chooseusitem">
@@ -65,14 +109,14 @@ export default function About() {
 
                         <div className="chooseusitem">
                             <img src="/images/chooseus2.png" alt="choose us image"/>
-                            <h3>Network</h3>
-                            <p>Our strong relationships with top<br /> suppliers in China enable fast, cost-<br />effective, and smooth deliveries.</p> 
+                            <h3 className="h3">Network</h3>
+                            <p className="p">Our strong relationships with top<br /> suppliers in China enable fast, cost-<br />effective, and smooth deliveries.</p> 
                         </div>
 
-                        <div className="chooseusitem" >
+                        <div className="chooseusitem choose" >
                             <img src="/images/chooseus3.png" />
-                            <h3>Support</h3>
-                            <p>Our dedicated customer service team is<br /> always available to assist, ensuring a<br /> seamless experience every time.</p>
+                            <h3 className="h3">Support</h3>
+                            <p className="p">Our dedicated customer service team is<br /> always available to assist, ensuring a<br /> seamless experience every time.</p>
                         </div>
                     </div>
                 </section>

@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Payment() {
     return (
         <main>
@@ -11,7 +13,7 @@ export default function Payment() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>
@@ -70,7 +72,9 @@ export default function Payment() {
                                     <input type="tel" placeholder="Phone Number (whatsapp)" name="contact" /><br />
                                 </div>  
                             </div>    
-                            <button type="submit">Continue</button>
+                            <Link href="/payment2">
+                                <button type="submit">Continue</button>
+                            </Link>
                         </form>
                     </section> 
                     

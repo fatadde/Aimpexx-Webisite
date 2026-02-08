@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Track() {
     return (
         <main>
@@ -40,7 +42,9 @@ export default function Track() {
                     </li>
                 </ul>
             </nav>
+            <Link href="/track">
             <button id="track">Track Shipment</button>
+            </Link>
         </header>
 
 
@@ -85,7 +89,7 @@ export default function Track() {
                         <ul>
                             <h2>Tools</h2>
                             <a href="/shippingcost"><li>Calculate Shipping<br />Cost</li></a>
-                            <a href="/trackShipment"><li>Track your<br />Shipment</li></a>
+                            <a href="/track"><li>Track your<br />Shipment</li></a>
                         </ul>
         
                         <ul>
@@ -109,4 +113,4 @@ export default function Track() {
                 </footer>
         </main>    
     )
-}
+};

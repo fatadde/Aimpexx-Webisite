@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Shipping() {
     return (
         <main>
@@ -11,7 +13,7 @@ export default function Shipping() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>
@@ -40,7 +42,9 @@ export default function Shipping() {
                     </li>
                 </ul>
             </nav>
-            <button id="track">Track Shipment</button>
+            <Link href="/track">
+                <button id="track">Track Shipment</button>
+            </Link>
         </header>
 
 
@@ -71,7 +75,10 @@ export default function Shipping() {
                                     </select>
                                 </div>
                             </div> 
-                            <button type="submit">Generate</button><br/>
+                            <Link href="/shipping2">
+                            <button type="submit">Generate</button>
+                            </Link>
+                            <br/>
                             <span>Join the moving train and make your business reach the global standard</span>
                         </form>
                     </section>

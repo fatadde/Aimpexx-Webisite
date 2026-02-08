@@ -112,7 +112,7 @@ main .herosection .hero .hero-bg {
 
 main .herosection .hero .hero-bg .img1 {
   position: relative;
-  left: 120px;
+  left: 80px;
   top: 80px;
   width: 196px;
   height: 209;
@@ -120,7 +120,7 @@ main .herosection .hero .hero-bg .img1 {
 
 main .herosection .hero .hero-bg .img2 {
   position: absolute;
-  left: 240px;
+  left: 280px;
   top: 310px;
   width: 196px;
   height: 209;
@@ -128,7 +128,7 @@ main .herosection .hero .hero-bg .img2 {
 
 main .herosection .hero .hero-bg .img3 {
     position: absolute;
-    left: 190px;
+    left: 150px;
     top: 230px;
     width: 196px;
     height: 209;
@@ -281,7 +281,7 @@ main .herosection .hero .hero-info div .button2 {
     height: 35px;
     margin: unset;
     position: absolute;
-    top: 785px;
+    top: 885px;
     left: 550px;
 }
 
@@ -291,7 +291,7 @@ main .herosection .hero .hero-info div .button2 {
     height: 35px;
     margin: unset;
     position: absolute;
-    top: 1140px;
+    top: 1230px;
     left: 550px;
 }
 
@@ -426,17 +426,17 @@ main .herosection .hero .hero-info div .button2 {
     height: 30px;
     margin: unset;
     position: absolute;
-    top: 1180px;
-    left: 552px;
+    top: 1280px;
+    left: 556px;
 }
 
 .cover22 {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 100px;
     height: 30px;
     margin: unset;
     position: absolute;
-    top: 1517px;
+    top: 1620px;
     left: 560px;
 }
 
@@ -967,7 +967,7 @@ main .herosection .hero .hero-info div .button2 {
     display: flex;
     align-items: top;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     margin: 50px 0px 0px 0px;
 }
 
@@ -998,14 +998,14 @@ main .herosection .hero .hero-info div .button2 {
     margin: unset;
     display: grid;
     width: 518px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
     color: #211D1D;
     width: 518px;
-    margin: 20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     text-align: left;
 }
 
@@ -2209,7 +2209,7 @@ main .herosection .hero .hero-info div .button2 {
     margin-top: 30px;
 }
 
-.scheldule form div p {
+.scheldule form div .service-option {
     width: 913px;
     height: 129px;
     border-radius: 20px;
@@ -2464,10 +2464,25 @@ main .herosection .hero .hero-info div .button2 {
 }
 
 
+.scheldule .service-option.selected {
+  border-color: #101987;
+  background-color: #f0f4ff;
+}
 
+.scheldule2 .timeframe-option.selected {
+  border-color: #101987;
+  background-color: #f0f4ff;
+}
 
+.started1 .service-option.selected {
+  border-color: #101987;
+  background-color: #f0f4ff;
+}
 
-
+.started2 .timeframe-option.selected {
+  border-color: #101987;
+  background-color: #f0f4ff;
+}
 
 
 
@@ -3628,7 +3643,7 @@ main .herosection .hero .hero-info div .button2 {
 
 
 footer {
-    margin: 80px 0px 20px 60px;
+    margin: 80px 0px 20px 0px;
 }
 
 footer .foot {

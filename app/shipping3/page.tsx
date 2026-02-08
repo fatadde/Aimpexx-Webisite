@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Shipping3() {
     return (
         <main>
@@ -40,7 +42,9 @@ export default function Shipping3() {
                     </li>
                 </ul>
             </nav>
-            <button id="track">Track Shipment</button>
+            <Link href="/track">
+                <button id="track">Track Shipment</button>
+            </Link>
         </header>
 
             <section className="shipping3">
@@ -88,8 +92,13 @@ export default function Shipping3() {
                                     <input type="text" placeholder="Input Tracking ID" name="track-id" id="trackId" /><br />
                                 </div> 
                             </div>
+                            <Link href="/">
                             <button type="button">Consolidate</button>   
+                            </Link>
+
+                            <Link href="/">
                             <button type="submit">Generate</button><br />
+                            </Link>
                             <span>Note: For consolidation, we typically have a 5-day window to receive<br /> goods before shipping. Extended storage can incur additional costs. Our<br /> sea shipments typically depart on Mondays and Wednesdays.</span>
                         </form>
                     </section>

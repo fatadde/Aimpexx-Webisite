@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Cost() {
     return (
         <main>
@@ -11,7 +13,7 @@ export default function Cost() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>
@@ -40,7 +42,9 @@ export default function Cost() {
                     </li>
                 </ul>
             </nav>
+            <Link href="/track">
             <button id="track">Track Shipment</button>
+            </Link>
         </header>
 
 

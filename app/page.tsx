@@ -317,7 +317,7 @@ export default function Home() {
             <div className="foot">
                 <ul>
                     <h2>Our Services</h2>
-                    <a href="/sourcing"><li>Sourcing</li></a>
+                    <a href="/source"><li>Sourcing</li></a>
                     <a href="/payment"><li>Payment to suppliers</li></a>
                     <a href="/quality-check"><li>Quality Check<br />(Inspection)</li></a>
                     <a href="/manufacturing"><li>Manufacturing</li></a>
@@ -326,8 +326,8 @@ export default function Home() {
 
                 <ul>
                     <h2>Company</h2>
-                    <a href="/aboutus"><li>About Us</li></a>
-                    <a href="/aboutus"><li>Why Choose Us</li></a>
+                    <a href="/about"><li>About Us</li></a>
+                    <a href="/about"><li>Why Choose Us</li></a>
                     <a href="/terms"><li>Terms & Conditions</li></a>
                     <a href="/privacy"><li>Privacy Policy</li></a>
                 </ul>

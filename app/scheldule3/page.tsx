@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Scheldule() {
     return (
         <main>
@@ -11,7 +13,7 @@ export default function Scheldule() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>
@@ -40,7 +42,9 @@ export default function Scheldule() {
                     </li>
                 </ul>
             </nav>
+            <Link href="/track">
             <button id="track">Track Shipment</button>
+            </Link>
         </header>
 
 
@@ -66,8 +70,11 @@ export default function Scheldule() {
                                 <div className="form-group">
                                     <input type="email" placeholder="Input E-mail Address" name="email" /><br />
                                 </div>       
-                            </div>    
-                            <button type="submit">Submit</button><br />
+                            </div>   
+                            <Link href="/"> 
+                            <button type="submit">Submit</button>
+                            </Link>
+                            <br />
                             <span>Join the moving train and make your business reach the global standard</span>
                         </form>
                     </section> 

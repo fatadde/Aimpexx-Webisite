@@ -3,6 +3,52 @@ import Link from "next/link"
 export default function manufacture3() {
     return (
         <main>
+            <header className="header">
+            <div className="logo">
+                <img src="/images/logo.png" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li className="dropdown">
+                        <a href="javascript:void(0)" className="dropbtn">Company▾</a>
+                        <div className="dropdown-content">
+                            <a href="/about">About Us</a>
+                            <a href="/about">Why Choose Us</a>
+                            <a href="/terms">Terms & Conditions</a>
+                        </div>
+                    </li>
+
+                    <li className="dropdown">
+                        <a href="javascript:void(0)" className="dropbtn">Services▾</a>
+                        <div className="dropdown-content">
+                            <a href="/source">Sourcing</a>
+                            <a href="/payment">Payment to suppliers</a>
+                            <a href="/qualitycheck">Quality Check(Inspection)</a>
+                            <a href="/manufacture">Manufacturing</a>
+                            <a href="/shipping">Shipping</a>
+                            <a href="/privacy">Privacy Policy</a>
+                        </div>
+                    </li>
+
+                    <li className="dropdown">
+                        <a href="javascript:void(0)" className="dropbtn">Contact▾</a>
+                        <div className="dropdown-content">
+                            <a href="#">21 Kodesho Street, Computer Village,Lagos State</a>
+                            <a href="#">+234 808 333 9380</a>
+                            <a href="#">aimpexx</a>
+                            <a href="#">aimpexxworldwide@gmail.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <Link href="/track">
+            <button id="track">Track Shipment</button>
+            </Link>
+        </header>
+
+
+
             <section className="manufacture3-form" id="form3">
                         <div className="progress-bar">
                             <div className="progress"></div>

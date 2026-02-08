@@ -1,77 +1,143 @@
-export default function Started1() {
-    return (
-        <main>
-            <header className="header">
-            <div className="logo">
-                <img src="/images/logo.png" />
-            </div>
+'use client';
+import Link from 'next/link';
 
-            <nav>
-                <ul>
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Company▾</a>
-                        <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
-                            <a href="/about">Why Choose Us</a>
-                            <a href="/terms">Terms & Conditions</a>
-                        </div>
-                    </li>
+import { useState } from 'react';
 
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Services▾</a>
-                        <div className="dropdown-content">
-                            <a href="/sourcing">Sourcing</a>
-                            <a href="/payment">Payment to suppliers</a>
-                            <a href="/quality">Quality Check(Inspection)</a>
-                            <a href="/manufacture">Manufacturing</a>
-                            <a href="/shipping">Shipping</a>
-                            <a href="/privacy">Privacy Policy</a>
-                        </div>
-                    </li>
+export default function Started() {
+  const services = [
+    {
+      value: 'Sourcing',
+      title: 'Sourcing',
+      description: 'Finding quality products in China',
+    },
+    {
+      value: 'Payment to Suppliers',
+      title: 'Payment to Suppliers',
+      description: 'No hidden charges, no FX confusion, no payment delays.',
+    },
+    {
+      value: 'Quality Check (Inspection)',
+      title: 'Quality Check (Inspection)',
+      description:
+        'Our inspection team ensures everything meets your exact specifications.',
+    },
+    {
+      value: 'Manufacturing',
+      title: 'Manufacturing',
+      description:
+        'From factory visits to real-time production monitoring, we ensure your products meet the agreed standards.',
+    },
+    {
+      value: 'Shipping',
+      title: 'Shipping',
+      description:
+        'We handle the journey from China to your final destination—smoothly, safely, and efficiently.',
+    },
+  ];
 
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Contact▾</a>
-                        <div className="dropdown-content">
-                            <a href="#">21 Kodesho Street, Computer Village,Lagos State</a>
-                            <a href="#">+234 808 333 9380</a>
-                            <a href="#">aimpexx</a>
-                            <a href="#">aimpexxworldwide@gmail.com</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <button id="track">Track Shipment</button>
-        </header>
+  const [selected, setSelected] = useState(null);
 
-
-
-            <section className="started1">
-                <h2>Choose the Service you need</h2>
-                <div className="progress-bar">
-                    <div className="progress"></div>
+  return (
+    <main>
+        <header className="header">
+                <div className="logo">
+                  <img src="/images/logo.png" alt="Logo" />
                 </div>
-                <p>Select the Service to best direct you with the right partner</p>
-                <form method="POST" action="/started">
-                    <div id="serviceOptions">
-                        <input type="radio" id="servic1" name="service" value="Sourcing" required />
-                        <p className="service-option" data-service="Sourcing">Sourcing<br /><span>Finding quality products in China</span></p>
-                        
-                        <input type="radio" id="service2" name="service" value="Payment to Suppliers" required />
-                        <p className="service-option" data-service="Payment to Suppliers">Payment to Suppliers<br /><span>No hidden charges, no FX confusion, no payment delays.</span></p>
-                        
-                        <input type="radio" id="service3" name="service" value="Quality Check (Inspection)" required />
-                        <p className="service-option" data-service="Quality Check (Inspection)"> quality Check (Inspection)<br /><span>our inspection team ensures everything meets your exact specifications. </span></p>
-                        
-                        <input type="radio" id="service4" name="service" value="Manufacturing" required />
-                        <p className="service-option" data-service="Manufacturing" >Manufacturing<br /><span>From factory visits to real-time production monitoring, we ensure your products<br /> meet the agreed standards.</span></p>
-                        
-                        <input type="radio" id="service5" name="service" value="Shipping" required />
-                        <p className="service-option" data-service="Shipping">Shipping<br /><span>We handle the journey from China to your final destination—smoothly,<br /> safely, and efficiently.</span></p>
-                    </div>
-                    <button type="submit" id="btn1">Next</button><br />
-                    <span>Join the moving train and make your business reach the global standard</span>
-                </form>
-            </section>
-        </main>
-    )
-};
+        
+                <nav>
+                  <ul>
+                    <li className="dropdown">
+                      <a href="#">Company▾</a>
+                      <div className="dropdown-content">
+                        <Link href="/about">About Us</Link>
+                        <Link href="/about">Why Choose Us</Link>
+                        <Link href="/terms">Terms & Conditions</Link>
+                      </div>
+                    </li>
+        
+                    <li className="dropdown">
+                      <a href="#">Services▾</a>
+                      <div className="dropdown-content">
+                        <Link href="/sourcing">Sourcing</Link>
+                        <Link href="/payment">Payment to suppliers</Link>
+                        <Link href="/quality">Quality Check(Inspection)</Link>
+                        <Link href="/manufacture">Manufacturing</Link>
+                        <Link href="/shipping">Shipping</Link>
+                        <Link href="/privacy">Privacy Policy</Link>
+                      </div>
+                    </li>
+        
+                    <li className="dropdown">
+                      <a href="#">Contact▾</a>
+                      <div className="dropdown-content">
+                        <span>21 Kodesho Street, Computer Village, Lagos State</span>
+                        <span>+234 808 333 9380</span>
+                        <span>aimpexx</span>
+                        <span>aimpexxworldwide@gmail.com</span>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+        
+                <Link href="/track">
+                  <button id="track">Track Shipment</button>
+                </Link>
+              </header>
+        
+
+        
+      <section className="started1">
+        <h2>Choose the Service you need</h2>
+
+        <div className="progress-bar">
+          <div className="progress"></div>
+        </div>
+
+        <p>Select the Service to best direct you with the right partner</p>
+
+        <form method="POST" action="/started">
+          <div id="serviceOptions">
+            {services.map((service, index) => {
+              const isSelected = selected === index;
+
+              return (
+                <div key={service.value}>
+                  <input
+                    type="radio"
+                    name="service"
+                    value={service.value}
+                    checked={isSelected}
+                    readOnly
+                    required
+                    style={{ display: 'none' }}
+                  />
+
+                  <p
+                    className={`service-option ${isSelected ? 'selected' : ''}`}
+                    data-service={service.value}
+                    onClick={() => setSelected(index)}
+                  >
+                    {service.title}
+                    <br />
+                    <span>{service.description}</span>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+
+          <Link href="/Started2">
+          <button type="submit" id="btn1" disabled={selected === null}>
+            Next
+          </button>
+          </Link>
+
+          <br />
+          <span>
+            Join the moving train and make your business reach the global standard
+          </span>
+        </form>
+      </section>
+    </main>
+  );
+}

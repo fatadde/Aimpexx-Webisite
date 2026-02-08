@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function manufacture3() {
     return (
         <main>
@@ -23,7 +25,9 @@ export default function manufacture3() {
                                     </select>
                                 </div>
                             </div>    
+                            <Link href="/">
                             <button type="submit">Submit</button>
+                            </Link>
                         </form>
                     </section>
             

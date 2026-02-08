@@ -66,8 +66,13 @@ export default function Home() {
                 <p>No guesswork. No delays. Just a seamless flow from order 
                   <br /> to delivery.</p>
                 <div>
-                    <button id="start" className="button1">Get Started</button>
-                    <button id="shippingcost" className="button2">Shipping Cost</button>
+                    <Link href="/started">
+                        <button id="start" className="button1">Get Started</button>
+                    </Link>
+
+                    <Link href="/shippingcost">
+                        <button id="shippingcost" className="button2">Shipping Cost</button>
+                    </Link>
                 </div>
             </div>
           </div>
@@ -127,8 +132,9 @@ export default function Home() {
                   <span>of importers face repeated delivery delays.</span>
                 </div>
             </div>
-
-            <button id="shipping">Ship Now</button>
+            <Link href="/shipping">
+                <button id="shipping">Ship Now</button>
+            </Link>
         </section>
 
         <section className="info-center">
@@ -257,7 +263,9 @@ export default function Home() {
                 <p>Book a 30-minute consultation</p>
                 <span>Speak directly with an experienced service agent</span>
                 <h2>Available 9:00 AM – 4:30 PM WAT (Monday–Friday)</h2>
+                <Link href="/scheldule">
                 <button id="book">Book a Session Now</button>
+                </Link>
             </div>    
         </section>
 

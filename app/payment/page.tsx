@@ -1,7 +1,6 @@
 export default function Payment() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />
@@ -110,12 +109,12 @@ export default function Payment() {
             
                             <ul>
                                 <h2>Company</h2>
-                                <a href="/aboutus"><li>About Us</li></a>
-                                <a href="#"><li>Why Choose Us</li></a>
+                                <a href="/about"><li>About Us</li></a>
+                                <a href="/about"><li>Why Choose Us</li></a>
                                 <a href="/terms"><li>Terms & Conditions</li></a>
                                 <a href="/privacy"><li>Privacy Policy</li></a>
                             </ul>
-             /
+             
                             <ul>
                                 <h2>Tools</h2>
                                 <a href="/shippingcost"><li>Calculate Shipping<br />Cost</li></a>

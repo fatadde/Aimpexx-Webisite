@@ -1,7 +1,6 @@
 export default function Shipping3() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />
@@ -12,7 +11,7 @@ export default function Shipping3() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>
@@ -43,54 +42,6 @@ export default function Shipping3() {
             </nav>
             <button id="track">Track Shipment</button>
         </header>
-
-
-
-
-            <main>
-            <header className="header">
-            <div className="logo">
-                <img src="/images/logo.png" />
-            </div>
-
-            <nav>
-                <ul>
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Company▾</a>
-                        <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
-                            <a href="/about">Why Choose Us</a>
-                            <a href="/terms">Terms & Conditions</a>
-                        </div>
-                    </li>
-
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Services▾</a>
-                        <div className="dropdown-content">
-                            <a href="/sourcing">Sourcing</a>
-                            <a href="/payment">Payment to suppliers</a>
-                            <a href="/quality">Quality Check(Inspection)</a>
-                            <a href="/manufacture">Manufacturing</a>
-                            <a href="/shipping">Shipping</a>
-                            <a href="/privacy">Privacy Policy</a>
-                        </div>
-                    </li>
-
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Contact▾</a>
-                        <div className="dropdown-content">
-                            <a href="#">21 Kodesho Street, Computer Village,Lagos State</a>
-                            <a href="#">+234 808 333 9380</a>
-                            <a href="#">aimpexx</a>
-                            <a href="#">aimpexxworldwide@gmail.com</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <button id="track">Track Shipment</button>
-        </header>
-
-
 
             <section className="shipping3">
                         <div className="herosection">
@@ -110,14 +61,14 @@ export default function Shipping3() {
                             <div className="column">
                                 <div className="field">
                                     <select name="shipmentType" required>
-                                        <option value="" disabled selected hidden>Select Category</option>
+                                        <option value="" disabled hidden>Select Category</option>
                                         <option value="Air Shipment">Air Shipment</option>
                                         <option value="Sea Shipment">Sea Shipment</option>
                                     </select>
                                 </div>     
             
                                 <div className="field">
-                                    <input type="text" placeholder="Input Weight (KG)" name="weight" /><br />
+                                    <input type="text" placeholder="Input Weight (KG)" name="weight" />
                                 </div>    
             
                                 <div className="field">
@@ -164,6 +115,54 @@ export default function Shipping3() {
                             <p>Fast, reliable<br /> door-to-door<br /> delivery</p>
                         </div>
                     </section>
+
+
+
+                    <footer>
+            <div className="foot">
+                <ul>
+                    <h2>Our Services</h2>
+                    <a href="/sourcing"><li>Sourcing</li></a>
+                    <a href="/payment"><li>Payment to suppliers</li></a>
+                    <a href="/quality-check"><li>Quality Check<br />(Inspection)</li></a>
+                    <a href="/manufacturing"><li>Manufacturing</li></a>
+                    <a href="/shipping"><li>Shipping</li></a>
+                </ul>
+
+                <ul>
+                    <h2>Company</h2>
+                    <a href="/aboutus"><li>About Us</li></a>
+                    <a href="/aboutus"><li>Why Choose Us</li></a>
+                    <a href="/terms"><li>Terms & Conditions</li></a>
+                    <a href="/privacy"><li>Privacy Policy</li></a>
+                </ul>
+
+                <ul>
+                    <h2>Tools</h2>
+                    <a href="/shippingcost"><li>Calculate Shipping<br />Cost</li></a>
+                    <a href="/trackShipment"><li>Track your<br />Shipment</li></a>
+                </ul>
+
+                <ul>
+                    <h2>Contact Us</h2>
+                    <a href="/aboutus"><li>21 Kodesho Street, Computer Village,<br /> Lagos State</li></a>
+                    <a href="/aboutus"><li>+234 808 333 9380</li></a>
+                    <a href="/aboutus"><li>aimpexx</li></a>
+                    <a href="/aboutus"><li>aimpexxworldwide@gmail.com</li></a>
+                </ul>
+
+                <form>
+                    <h2>Subscribe to our News letter</h2>
+                    <label>
+                        <input type="email" placeholder="Enter your E-mail Address" />
+                    </label><br />
+                    <button>Subscribe</button>
+                </form>
+            </div>
+            <div className="line"></div>
+            <p className="reserved">2025 <span>c</span> Aimpexx All rights reserved</p>
+        </footer>
+        
         </main>
     )
-}
+};

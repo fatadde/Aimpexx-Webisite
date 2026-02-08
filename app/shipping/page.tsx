@@ -1,7 +1,6 @@
 export default function Shipping() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />
@@ -66,7 +65,7 @@ export default function Shipping() {
             
                                 <div className="field">
                                     <select name="shipmentType" id="shipmentType" required>
-                                        <option value="" disabled selected hidden>Select Shipment</option>
+                                        <option value="" disabled hidden>Select Shipment</option>
                                         <option value="Air Shipment">Air Shipment</option>
                                         <option value="Sea Shipment">Sea Shipment</option>
                                     </select>
@@ -78,4 +77,4 @@ export default function Shipping() {
                     </section>
         </main>
     )
-}
+};

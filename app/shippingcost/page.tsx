@@ -1,7 +1,6 @@
 export default function Cost() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />
@@ -132,7 +131,7 @@ export default function Cost() {
                                                 <div className="field">
                                                     <label>Cargo Type</label><br />
                                                     <select name="shipmentType" id="shipmentType" required>
-                                                        <option value="" disabled selected hidden>Air</option>
+                                                        <option value="" disabled hidden>Air</option>
                                                         <option value="Air Shipment">Air Shipment</option>
                                                         <option value="Sea Shipment">Sea Shipment</option>
                                                     </select>
@@ -148,7 +147,7 @@ export default function Cost() {
                                                 <div className="field">
                                                     <label>Destination</label><br />
                                                     <select name="shipmentType" id="shipmentType" required>
-                                                        <option value="" disabled selected hidden>Lagos</option>
+                                                        <option value="" disabled hidden>Lagos</option>
                                                         <option value="Air Shipment">Air Shipment</option>
                                                         <option value="Sea Shipment">Sea Shipment</option>
                                                     </select>
@@ -157,7 +156,7 @@ export default function Cost() {
                                                 <div className="field">
                                                     <label>Service Type</label><br />
                                                     <select name="shipmentType" id="shipmentType" required>
-                                                        <option value="" disabled selected hidden>General Goods</option>
+                                                        <option value="" disabled hidden>General Goods</option>
                                                         <option value="Air Shipment">Air Shipment</option>
                                                         <option value="Sea Shipment">Sea Shipment</option>
                                                     </select>
@@ -230,4 +229,4 @@ export default function Cost() {
                 </footer> 
         </main>
     )
-}
+};

@@ -1,7 +1,6 @@
 export default function Terms() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />
@@ -12,7 +11,7 @@ export default function Terms() {
                     <li className="dropdown">
                         <a href="javascript:void(0)" className="dropbtn">Company▾</a>
                         <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
+                            <a href="/about">About Us</a>
                             <a href="/about">Why Choose Us</a>
                             <a href="/terms">Terms & Conditions</a>
                         </div>

@@ -1,7 +1,6 @@
 export default function Source() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />

@@ -1,93 +1,51 @@
-export default function Payment2() {
+export default function manufacture3() {
     return (
         <main>
-           <header className="header">
-            <div className="logo">
-                <img src="/images/logo.png" />
-            </div>
-
-            <nav>
-                <ul>
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Company▾</a>
-                        <div className="dropdown-content">
-                            <a href="/aboutName">About Us</a>
-                            <a href="/about">Why Choose Us</a>
-                            <a href="/terms">Terms & Conditions</a>
-                        </div>
-                    </li>
-
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Services▾</a>
-                        <div className="dropdown-content">
-                            <a href="/sourcing">Sourcing</a>
-                            <a href="/payment">Payment to suppliers</a>
-                            <a href="/quality">Quality Check(Inspection)</a>
-                            <a href="/manufacture">Manufacturing</a>
-                            <a href="/shipping">Shipping</a>
-                            <a href="/privacy">Privacy Policy</a>
-                        </div>
-                    </li>
-
-                    <li className="dropdown">
-                        <a href="javascript:void(0)" className="dropbtn">Contact▾</a>
-                        <div className="dropdown-content">
-                            <a href="#">21 Kodesho Street, Computer Village,Lagos State</a>
-                            <a href="#">+234 808 333 9380</a>
-                            <a href="#">aimpexx</a>
-                            <a href="#">aimpexxworldwide@gmail.com</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <button id="track">Track Shipment</button>
-        </header>
-
-
-
-
-            <section className="payment2-form" id="form2">
+            <section className="manufacture3-form" id="form3">
                         <div className="progress-bar">
                             <div className="progress"></div>
                         </div>
-                        <form method="POST" action="/payment2">
-                            <div className="column">
-                                <div className="form-group">
-                                    <input type="text" placeholder="Amount in RMB (¥)" name="description" /><br />
-                                </div> 
-                                
+                        <form method="POST" action="/manufacturing3">
+                            <div className="column">    
                                 <div className="form-group">
                                     <select name="shipmentType" id="shipmentType" required>
-                                        <option disabled hidden>Choose Payment platform</option>
-                                        
+                                        <option value="" disabled selected hidden>Time Zone</option>
                                         <option value="Air Shipment">Air Shipment</option>
                                         <option value="Sea Shipment">Sea Shipment</option>
                                     </select>
-                                </div> 
+                                </div>     
+                        
+                                <div className="form-group">
+                                    <select name="shipmentType" id="shipmentType" required >
+                                        <option value="" disabled selected hidden>Time Of Contact</option>
+                                        <option value="Air Shipment">Air Shipment</option>
+                                        <option value="Sea Shipment">Sea Shipment</option>
+                                    </select>
+                                </div>
                             </div>    
-                            <button type="submit">Continue</button>
+                            <button type="submit">Submit</button>
                         </form>
-                    </section>   
+                    </section>
             
                    <section className="shipping-boxes">
                         <div className="box">
                             <span>1</span>
-                            <p>Pay locally in<br /> your home<br /> currency</p>
+                            <p>Verified and<br /> trusted <br />supplier<br /> network</p>
                         </div>
             
                         <div className="box">
                             <span>2</span>
-                            <p>Fraud-proof,<br /> secure<br /> transactions</p>
+                            <p>Thorough<br /> product quality<br /> validation</p>
                         </div>
             
                         <div className="box">
                             <span>3</span>
-                            <p>Zero hidden<br /> fees</p>
+                            <p>Fair and<br /> optimized<br /> pricing</p>
                         </div>
             
                         <div className="box">
                             <span>4</span>
-                            <p>Fast, reliable payment processing</p>
+                            <p>Custom product<br /> options when<br /> needed</p>
                         </div>
                     </section>
             
@@ -135,7 +93,6 @@ export default function Payment2() {
                         <div className="line"></div>
                         <p className="reserved">2025 <span>c</span> Aimpexx All rights reserved</p>
                     </footer>
-            
         </main>
     )
 }

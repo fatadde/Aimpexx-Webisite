@@ -1,7 +1,6 @@
 export default function Scheldule2() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />

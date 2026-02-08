@@ -1,7 +1,6 @@
-export default function shippin2() {
+export default function shipping2() {
     return (
         <main>
-            <main>
             <header className="header">
             <div className="logo">
                 <img src="/images/logo.png" />
@@ -73,7 +72,7 @@ export default function shippin2() {
                                    </select>
                                </div>
                            </div>    
-                           <div id="shipmentInfo">
+                           <div id="shipmentInfo" className="shipmentinfo">
                                <span>Warehouse Address</span>
                            </div> 
                            <button type="submit">Continue to Shipping</button><br />
